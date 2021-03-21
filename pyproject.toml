@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "CHANGE_ME"
+name = "mixbag"
 version = "0.0.0-alpha"
 description = ""
 authors = ["Anthony Almarza <anthony.almarza@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "CHANGE_ME", from = "src" },
+    { include = "mixbag", from = "src" },
 ]
 # https://pypi.org/classifiers/
 classifiers = [
@@ -21,6 +21,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+boto3 = "^1.17.33"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6"
@@ -57,7 +58,7 @@ docs-build = "scripts.docs_build:main"
 
 [tool.coverage.run]
 source = [
-    "CHANGE_ME",
+    "mixbag",
 ]
 omit = [
     "tests/*",
