@@ -1,4 +1,4 @@
-# MixBag \U0002728
+# MixBag \U00012728
 
 > A collection of open-source Python projects
 
