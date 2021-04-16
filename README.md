@@ -1,50 +1,34 @@
 # MixBag
 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![codecov](https://codecov.io/gh/anthonyalmarza/mixbag/branch/main/graph/badge.svg?token=JRCC98L3FG)](https://codecov.io/gh/anthonyalmarza/mixbag)
-![Build](https://github.com/anthonyalmarza/mixbag/workflows/Build/badge.svg)
+> A collection of open-source Python projects
+
+This repo represents an attempt to streamline the development and delivery of a
+number open-source python projects using a strict monorepo structure on top of
+`poetry`.
+
+## Overview
+
+### Projects
+Open source python projects - with the intention of making them available via
+pypi
+
+TBD
+
+
+## Why?
+
+Simple. I was neglecting and losing track of my side projects.
+The older the projects became the harder they became to keep up to date.
+More than that, I stopped pushing myself to try new things.
+
+So I found myself constantly spinning up private GitHub repos to collect ideas.
+Unsurprisingly these projects just fell by the wayside as life popped up and
+"got in the way".
+
+in a space where potentially reuse elsewhere ...
+Manage interdependent packages
+
 
 ## Local Development
 
-### Pyenv
-It's recommended that you use [pyenv](https://github.com/pyenv/pyenv)
-
-[pyenv-installer](https://github.com/pyenv/pyenv-installer)
-```bash
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-```
-
-### Install Poetry
-
-This project uses [poetry](https://python-poetry.org). Install it using the following command.
-```bash
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-```
-More instructions [here](https://python-poetry.org/docs/#installation).
-
-### Install Dependencies
-
-```shell
-poetry install
-```
-
-### Install pre-commit hooks
-
-```shell
-poetry run pre-commit install --hook-type commit-msg
-
-poetry run pre-commit install
-
-```
-
-### Running Tests
-
-```shell
-poetry run pyscript tests
-```
-
-### Build Docs
-
-```shell
-poetry run pyscript docs_build
-```
+TBD

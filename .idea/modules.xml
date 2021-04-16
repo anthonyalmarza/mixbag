@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/projects/aws/.idea/aws.iml" filepath="$PROJECT_DIR$/projects/aws/.idea/aws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/boto/.idea/boto.iml" filepath="$PROJECT_DIR$/projects/boto/.idea/boto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/chalk/.idea/chalk.iml" filepath="$PROJECT_DIR$/projects/chalk/.idea/chalk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/docs/.idea/docs.iml" filepath="$PROJECT_DIR$/projects/docs/.idea/docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mixbag.iml" filepath="$PROJECT_DIR$/.idea/mixbag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/scripts/.idea/scripts.iml" filepath="$PROJECT_DIR$/projects/scripts/.idea/scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/security/.idea/security.iml" filepath="$PROJECT_DIR$/projects/security/.idea/security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/utils/.idea/utils.iml" filepath="$PROJECT_DIR$/projects/utils/.idea/utils.iml" />
+    </modules>
+  </component>
+</project>

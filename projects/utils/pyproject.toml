@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "mixbag.utils"
+version = "0.0.0-alpha"
+description = ""
+authors = ["Anthony Almarza <anthony.almarza@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mixbag", from = "src" },
+]
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    #"Development Status :: 4 - Beta",
+    #"Development Status :: 5 - Production/Stable",
+    #"Development Status :: 6 - Mature",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6"
+pytest-sugar = "^0.9.4"
+pytest-mock = "^3.4.0"
+pytest-responses = "^0.4.0"
+pytest-picked = "^0.4.4"
+pytest-instafail = "^0.4.2"
+pytest-cov = "^2.11.1"
+flake8 = "^3.9.1"
+mypy = "^0.812"
+pylint = "^2.7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = [
+    "mixbag",
+]
+omit = [
+    "tests/*",
+    "factories/*"
+]
+
+[tool.coverage.report]
+omit = [
+    "tests/*",
+    "factories/*"
+]
+skip_empty = true
+show_missing = true
+fail_under = 70
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.pytest.ini_options]
+addopts = "-s"
+python_files = [
+    "test_*.py",
+    "tests.py",
+    "*_tests.py"
+]
+testpaths = [
+    "./tests",
+]
+markers = [
+    "integration",
+    "unit"
+]

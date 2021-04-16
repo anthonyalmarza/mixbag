@@ -6,13 +6,30 @@ then
   echo -e "\nInstalling PyEnv"
   curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 fi
-pyenv install -s 3.8.6
+
+pyenv install -s 3.8.8
+pyenv install -s 3.9.2
+
+pip install -U pip --quiet
+
+touch common/.python-version
+echo -en "3.8.8\n3.9.2" > common/.python-version
+ln -fs common/.python-version .python-version
+
+# TODO: Add versions to ensure it's stable
+# Ensure that the following tools are installed globally
+# Yeah, yeah - violation of venv ...
+# but then there's npm install -g yarn grunt prettier
+pip install black --quiet
+pip install isort --quiet
+pip install pre-commit --quiet
+pip install tox --quiet
+
+pre-commit install --hook-type commit-msg
+pre-commit install
 
 if ! hash poetry &> /dev/null
 then
   echo -e "\nInstalling Poetry"
   curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 fi
-poetry install
-poetry run pre-commit install --hook-type commit-msg
-poetry run pre-commit install
