@@ -80,9 +80,9 @@ jobs:
     # IDEA: use an explicit version file to trigger a release
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
     needs:
-      - test38
-      - test39
-      - linting
+      - security-test38
+      - security-test39
+      - security-linting
     runs-on: ubuntu-latest
     steps:
       #----------------------------------------------
