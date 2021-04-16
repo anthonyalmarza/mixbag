@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - projects/security
+      - projects/security/**
       - .github/workflows/security.yml
 
 jobs:
