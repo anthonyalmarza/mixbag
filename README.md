@@ -1,4 +1,4 @@
-# MixBag \U00012728
+# MixBag :sparkles:
 
 > A collection of open-source Python projects
 
