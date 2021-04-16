@@ -50,9 +50,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: projects/security/.tox
-          key: tox-${{ runner.os }}-security-mypy
+          key: tox-${{ runner.os }}-security-linting
       - name: Test with tox
-        run: tox -p -c projects/security -e mypy,pretty,flake8,pylint
+        run: tox -c projects/security -e mypy,pretty,flake8,pylint
 #    steps:
 #      #----------------------------------------------
 #      #       check-out repo and set-up python
