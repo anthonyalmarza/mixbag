@@ -28,9 +28,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: projects/security/.tox
-          key: tox-${{ runner.os }}-security
+          key: tox-${{ runner.os }}-security-test
       - name: Test with tox
-        run: tox -e py38
+        run: tox -c projects/security -e py38
 
 #    steps:
 #      #----------------------------------------------
